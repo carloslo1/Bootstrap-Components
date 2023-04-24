@@ -1,7 +1,7 @@
 # Bootstrap Components Repository
 This repository is dedicated to showcasing a comprehensive collection of Bootstrap components, designed to help you enhance your web development projects with ease and efficiency. Bootstrap is a popular front-end framework that offers a myriad of pre-built, responsive, and customizable elements that can be easily integrated into your web designs.
 
-Components Overview
+# Components Overview
 The components included in this repository cover a wide range of Bootstrap's core functionalities, providing you with everything you need to create stunning and interactive websites. Some of the key components included are:
 
 Navigation: Responsive navigation bars, navs, and breadcrumbs to improve website navigation and user experience.
