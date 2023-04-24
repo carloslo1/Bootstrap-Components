@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Carousel</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3">Carousel</h1>
+                <p>The carousel component in Bootstrap is a dynamic and responsive slideshow used for cycling through a
+                    series of content, such as images or text. Carousels are visually engaging and can showcase featured
+                    content or highlights on a web page.</p>
+            </section>
+            <section class="mb-5">
+                <h5>Basic</h5>
+                <p>Basic carousel without captions.</p>
+                <section id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <section class="carousel-inner">
+                        <section class="carousel-item active">
+                            <img src="../asserts/900x300.png" class="d-block w-100" alt="...">
+                        </section>
+                        <section class="carousel-item">
+                            <img src="../asserts/800x300.png" class="d-block w-100" alt="...">
+                        </section>
+                        <section class="carousel-item">
+                            <img src="../asserts/700x300.png" class="d-block w-100" alt="...">
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="mb-5">
+                <h5>Captions</h5>
+                <p>Carousel with captions on each slide.</p>
+                <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <section class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </section>
+                    <section class="carousel-inner">
+                        <section class="carousel-item active">
+                            <img src="../asserts/900x300.png" class="d-block w-100" alt="...">
+                            <section class="carousel-caption d-none d-md-block">
+                                <h5>First Slide</h5>
+                                <p>First slide caption.</p>
+                            </section>
+                        </section>
+                        <section class="carousel-item">
+                            <img src="../asserts/800x300.png" class="d-block w-100" alt="...">
+                            <section class="carousel-caption d-none d-md-block">
+                                <h5>Second Slide</h5>
+                                <p>Second slide caption.</p>
+                            </section>
+                        </section>
+                        <section class="carousel-item">
+                            <img src="../asserts/700x300.png" class="d-block w-100" alt="...">
+                            <section class="carousel-caption d-none d-md-block">
+                                <h5>Third Slide</h5>
+                                <p>Third slide caption.</p>
+                            </section>
+                        </section>
+                    </section>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

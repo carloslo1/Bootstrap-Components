@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Collapse</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Collapse</h1>
+                <p>The collapse component in Bootstrap is a UI element that enables toggling the visibility of content sections, such as menus or accordions. 
+                    Collapse is useful for managing screen space and improving user experience by revealing or hiding content on demand.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Basic</h5>
+                    <p>A single collapsible element with two different triggers - one using href and the other using
+                        data-bs-target.
+                    </p>
+                    <p>
+                        <a class=" btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Link with href
+                        </a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Button with data-bs-target
+                        </button>
+                    </p>
+                    <section class="collapse" id="collapseExample">
+                        <section class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed
+                            when the
+                            user activates the relevant trigger.
+                        </section>
+                    </section>
+            </section>
+            <section class=" mb-5">
+                <h5>Multiple Toggles and Targets</h5>
+                <p>Three triggers, each with different targets. The first and second triggers control individual
+                    collapsible
+                    elements, while the third toggles both elements simultaneously.</p>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                        aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first
+                        element</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Toggle second element</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".multi-collapse" aria-expanded="false"
+                        aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                        elements</button>
+                </p>
+                <section class="row">
+                    <section class="col">
+                        <section class="collapse multi-collapse" id="multiCollapseExample1">
+                            <section class="card card-body">
+                                Some placeholder content for the first collapse component of this multi-collapse
+                                example.
+                                This
+                                panel
+                                is hidden by default but revealed when the user activates the relevant trigger.
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col">
+                        <section class="collapse multi-collapse" id="multiCollapseExample2">
+                            <section class="card card-body">
+                                Some placeholder content for the second collapse component of this
+                                multi-collapse
+                                example.
+                                This
+                                panel is hidden by default but revealed when the user activates the relevant
+                                trigger.
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class=" mb-5">
+                <h5>Horizontal</h5>
+                <p>A horizontal collapse example, where the content width is reduced instead of the height.</p>
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Toggle width collapse
+                    </button>
+                </p>
+                <section class="container">
+                    <section">
+                        <section class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <section class="card card-body">
+                                This is some placeholder content for a horizontal collapse. It's hidden by default
+                                and shown
+                                when
+                                triggered.
+                            </section>
+                        </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Scrollspy</title>
+</head>
+
+<body>
+    <header class=" bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Scrollspy</h1>
+                <p>Scrollspy in Bootstrap is a JavaScript plugin that automatically highlights the active navigation link based on the current scroll position of the page. It's a useful tool for improving usability and user experience.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Navbar</h5>
+                    <p>Scroll the area below the navbar and watch the active class change. Open the dropdown menu and
+                        watch the dropdown items be highlighted as well.</p>
+                    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading1">First</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+                        tabindex="0">
+                        <h4 id="scrollspyHeading1">First heading</h4>
+                        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                            page, the appropriate navigation link is highlighted. It's repeated throughout the component
+                            example. We keep adding some more example copy here to emphasize the scrolling and
+                            highlighting.</p>
+                        <h4 id="scrollspyHeading2">Second heading</h4>
+                        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                            page, the appropriate navigation link is highlighted. It's repeated throughout the component
+                            example. We keep adding some more example copy here to emphasize the scrolling and
+                            highlighting.</p>
+                        <h4 id="scrollspyHeading3">Third heading</h4>
+                        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                            page, the appropriate navigation link is highlighted. It's repeated throughout the component
+                            example. We keep adding some more example copy here to emphasize the scrolling and
+                            highlighting.</p>
+                        <h4 id="scrollspyHeading4">Fourth heading</h4>
+                        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                            page, the appropriate navigation link is highlighted. It's repeated throughout the component
+                            example. We keep adding some more example copy here to emphasize the scrolling and
+                            highlighting.</p>
+                        <h4 id="scrollspyHeading5">Fifth heading</h4>
+                        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                            page, the appropriate navigation link is highlighted. It's repeated throughout the component
+                            example. We keep adding some more example copy here to emphasize the scrolling and
+                            highlighting.</p>
+                    </section>
+            </section>
+            <section class=" mb-5">
+                <h5>List group</h5>
+                <p>Scroll the area next to the list group and watch the active class change.</p>
+                <section class="row">
+                    <section class="col-4">
+                        <section id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                        </section>
+                    </section>
+                    <section class="col-8">
+                        <section data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                            class="scrollspy-example" tabindex="0">
+                            <h4 id="list-item-1">Item 1</h4>
+                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                                page, the appropriate navigation link is highlighted. It's repeated throughout the
+                                component example. We keep adding some more example copy here to emphasize the scrolling
+                                and highlighting.</p>
+                            <h4 id="list-item-2">Item 2</h4>
+                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                                page, the appropriate navigation link is highlighted. It's repeated throughout the
+                                component example. We keep adding some more example copy here to emphasize the scrolling
+                                and highlighting.</p>
+                            <h4 id="list-item-3">Item 3</h4>
+                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                                page, the appropriate navigation link is highlighted. It's repeated throughout the
+                                component example. We keep adding some more example copy here to emphasize the scrolling
+                                and highlighting.</p>
+                            <h4 id="list-item-4">Item 4</h4>
+                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
+                                page, the appropriate navigation link is highlighted. It's repeated throughout the
+                                component example. We keep adding some more example copy here to emphasize the scrolling
+                                and highlighting.</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

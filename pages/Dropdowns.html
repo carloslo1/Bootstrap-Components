@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/popper.js"></script>
+    <title>Dropdowns</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Dropdowns</h1>
+                <p>The dropdowns component in Bootstrap is a UI element that displays a list of options or actions when triggered by a user interaction, such as a click or hover. 
+                    Dropdowns are useful for organizing navigation, menus, or actions in a compact and accessible way.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Single Button</h5>
+                    <p>A simple dropdown menu with one button acting as the trigger to toggle the menu.</p>
+                    <section class=" dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </section>
+            </section>
+            <section class=" mb-5">
+                <h5>Split Button</h5>
+                <p>A split button dropdown menu with two buttons - one for the primary action and another to toggle the
+                    dropdown menu.</p>
+                <section class="btn-group">
+                    <button type="button" class="btn btn-danger">Action</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class=" mb-5">
+                <h5>Dark Dropdowns</h5>
+                <p>A dropdown menu with a dark theme, which is achieved by using the "dropdown-menu-dark" class.</p>
+                <section class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

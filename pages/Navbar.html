@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Navbar</h1>
+                <p>The navbar component in Bootstrap is a responsive and versatile navigation header used for organizing primary navigation, branding elements, and other interactive items in a 
+                    consistent and accessible manner. Navbars are suitable for various applications, such as website headers or application toolbars.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Navbar Brand</h5>
+                    <p>Examples of navbar branding: as a link and as a heading.</p>
+                    <nav class=" navbar bg-body-tertiary">
+                        <section class="container-fluid">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                        </section>
+                    </nav>
+                    <nav class="navbar bg-body-tertiary">
+                        <section class="container-fluid">
+                            <span class="navbar-brand mb-0 h1">Navbar</span>
+                        </section>
+                    </nav>
+            </section>
+            <section class="mb-5">
+                <h5>Forms</h5>
+                <p>Example of a navigation bar with a search form.</p>
+                <nav class="navbar bg-body-tertiary">
+                    <section class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </section>
+                </nav>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

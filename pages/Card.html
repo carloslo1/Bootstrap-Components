@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Card</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Card</h1>
+                <p>The card component in Bootstrap is a flexible and extensible content container, used for displaying a variety of content with an optional header and footer. 
+                    Cards can include images, text, buttons, or links, making them ideal for presenting information in an organized and visually appealing manner.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Basic</h5>
+                    <p>Basic card with an image, title, text content, and a button.</p>
+                    <!-- Basic Card -->
+                    <section class=" card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <section class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </section>
+                    </section>
+            </section>
+            <section class=" mb-5">
+                <h5>Header and Footer</h5>
+                <!-- Card with header -->
+                <p>Card with a header at the top and a footer at the bottom.</p>
+                <section class="card">
+                    <section class="card-header">
+                        Featured
+                    </section>
+                    <section class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </section>
+                </section>
+            </section>
+            <section class=" mb-5">
+                <h5>Navigation</h5>
+                <!-- Card with navigation tabs -->
+                <p>Card with navigation tabs in the header.</p>
+                <section class="card text-center">
+                    <section class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

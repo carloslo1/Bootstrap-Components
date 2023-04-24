@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Offcanvas</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Offcanvas</h1>
+                <p>The offcanvas component in Bootstrap is a hidden sidebar or panel that slides in from the side of the viewport when activated. 
+                    It's useful for creating responsive navigation menus or hidden UI elements. You can customize its appearance and behavior using CSS and JavaScript.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Live Demo</h5>
+                    <p>Example of an offcanvas triggered by a link or a button.</p>
+                    <a class=" btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                    </button>
+
+                    <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <section class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </section>
+                        <section class="offcanvas-body">
+                            <section>
+                                Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                                text,
+                                images, lists, etc.
+                            </section>
+                            <section class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+            </section>
+            <section class="mb-5">
+                <h5>Static Backdrop</h5>
+                <p>Example of an offcanvas with a static backdrop that won't close when clicking outside of it.</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Toggle static offcanvas
+                </button>
+                <section class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <section class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </section>
+                    <section class="offcanvas-body">
+                        <section>
+                            I will not close if you click outside of me.
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Progress</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Progress</h1>
+                <p>The Progress component in Bootstrap is a visual indicator that shows the progress of a task. It's a simple and flexible way to integrate progress display into your interface.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Labels</h5>
+                    <p>An example of a progress bar with a label indicating the progress percentage.</p>
+                    <section class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <section class="progress-bar" style="width: 25%">25%</section>
+                    </section>
+            </section>
+            <section class="mb-5">
+                <h5>Backgrounds</h5>
+                <p>Examples of progress bars with different background colors using Bootstrap background classes.</p>
+                <section class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <section class="progress-bar bg-success" style="width: 25%"></section>
+                </section>
+                <section class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <section class="progress-bar bg-info" style="width: 50%"></section>
+                </section>
+                <section class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <section class="progress-bar bg-warning" style="width: 75%"></section>
+                </section>
+                <section class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <section class="progress-bar bg-danger" style="width: 100%"></section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

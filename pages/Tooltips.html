@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+
+    <title>Tooltips</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Tooltips</h1>
+                <p>Tooltips in Bootstrap are small pop-up boxes that appear when a user hovers over or clicks on an element. 
+                    They provide additional information or context and can be customized in terms of appearance, position, and behavior using CSS and JavaScript.</p>
+            </section>
+
+            <section class=" mb-5">
+                    <h5>Custom Tooltips</h5>
+                    <p>Custom tooltip with a theme applied via CSS variables.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="This top tooltip is themed via CSS variables.">
+                        Custom tooltip
+                    </button>
+            </section>
+            <section class="mb-5">
+                <h5>Directions</h5>
+                <p>Tooltips with different placement directions: top, right, bottom, and left.</p>
+                <section class="d-flex gap-2">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="Tooltip on top">
+                        Tooltip on top
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-title="Tooltip on right">
+                        Tooltip on right
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Tooltip on bottom">
+                        Tooltip on bottom
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        Tooltip on left
+                    </button>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

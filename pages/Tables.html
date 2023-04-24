@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Tables</title>
+
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Tables</h1>
+                <p>Tables in Bootstrap are HTML elements that display data in rows and columns. They can be customized in terms of appearance, responsiveness, and behavior using CSS and built-in classes. They're a simple and effective way to present information in a structured and organized way.</p>
+            </section>
+            <section class=" mb-5">
+                    <!-- Variants -->
+                    <h5>Variants</h5>
+                    <p>Different visual styles for tables in Bootstrap.</p>
+                    <table class=" table">
+                        <thead>
+                            <tr class="table-primary">
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-success">
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Mark@example.com</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>Jacob</td>
+                                <td>Otto</td>
+                                <td>Jacob@example.com</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>Larry</td>
+                                <td>Otto</td>
+                                <td>Larry@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+            <section class="mb-5">
+                <!-- Accented -->
+                <h5>Accented</h5>
+                <p>Highlight rows with contextual colors to draw attention.</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Firstname</th>
+                            <th scope="col">Lastname</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mark</th>
+                            <td>Otto</td>
+                            <td>Mark@example.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jacob</th>
+                            <td>Otto</td>
+                            <td>Jacob@example.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Larry</th>
+                            <td>Otto</td>
+                            <td>Larry@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Hoverable Rows -->
+                <h5>Hoverable Rows</h5>
+                <p>Highlight rows when hovered to make them easier to read.</p>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Mark@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Otto</td>
+                            <td>Jacob@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>Otto</td>
+                            <td>Larry@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Active -->
+                <h5>Active</h5>
+                <p>Highlight the row that is currently selected by the user.</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Mark@example.com</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>Jacob</td>
+                            <td>Otto</td>
+                            <td>Jacob@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>Otto</td>
+                            <td>Larry@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Borders -->
+                <h5>Borders</h5>
+                <p>Add borders to the table or its cells.</p>
+                <table class="table table-bordered border-primary">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Mark@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Otto</td>
+                            <td>Jacob@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>Otto</td>
+                            <td>Larry@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Group Dividers -->
+                <h5>Group Dividers</h5>
+                <p>Visually separate rows into groups with dividers.</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Mark@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Otto</td>
+                            <td>Jacob@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>Otto</td>
+                            <td>Larry@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Nesting -->
+                <h5>Nesting</h5>
+                <p>Embed tables within tables to represent hierarchical data.</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <table class="table mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>Mark@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mark.Otto@example.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Otto</td>
+                            <td>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Jacob@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob.Otto@example.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>Otto</td>
+                            <td>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Larry@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Larry.Otto@example.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Anatomy -->
+                <h5>Anatomy</h5>
+                <p>Basic structure and terminology of a table in Bootstrap.</p>
+                <table class="table">
+                    <caption>List of users</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Firstname</th>
+                            <th scope="col">Lastname</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mark</th>
+                            <td>Otto</td>
+                            <td>Mark@example.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jacob</th>
+                            <td>Otto</td>
+                            <td>Jacob@example.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Larry</th>
+                            <td>Otto</td>
+                            <td>Larry@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="mb-5">
+                <!-- Responsive -->
+                <h5>Responsive</h5>
+                <p>Tables that adjust their layout to fit on different screen sizes.</p>
+                <section class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Mark@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Otto</td>
+                                <td>Jacob@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Larry</td>
+                                <td>Otto</td>
+                                <td>Larry@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

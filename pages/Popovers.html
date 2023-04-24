@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js" defer></script>
+    <script src="../js/popper.js"></script>
+    <title>Popovers</title>
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="../index.html" class="nav-link text-white fw-bold ms-3 fs-2">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="d-flex w-100 justify-content-end align-items-center">
+                    <section class="d-flex align-items-center me-3">
+                        <img src="../asserts/goku.jpg" alt="" class="rounded-circle img-thumbnail me-3" width="70">
+                        <section class="d-flex flex-column text-white">
+                            <h5 class="mb-0 fw-bold">Carlos Lozano</h5>
+                            <p class="mb-0 fw-bold">carlos.lozano@ucreativa.com</p>
+                            <p class="mb-0 fw-bold">+506 6223-6175</p>
+                        </section>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <section class="mb-5">
+                <h1 class="text-center mb-3"">Popovers</h1>
+                <p>Popovers in Bootstrap are small overlays that provide additional information or context to users. They can be triggered by clicking, hovering, or focusing on elements 
+                    and can contain text, images, or forms.</p>
+            </section>
+            <section class=" mb-5">
+                    <h5>Live Demo</h5>
+                    <p>The live demo showcases the functionality and customization options of popovers, including
+                        triggers, placement, and content.</p>
+                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                        data-bs-title="Popover title"
+                        data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                        popover</button>
+            </section>
+            <section class=" mb-5">
+                <h5>Disabled Elements</h5>
+                <p>Disabled elements are those that are non-clickable and have reduced opacity, but can still
+                    display content via a popover.</p>
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="Disabled popover">
+                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+                </span>
+            </section>
+        </section>
+        </script>
+    </main>
+</body>
+
+</html>
