@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 	var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 		target: '#navbar-example2',
-		rootMargin: '0px 0px -40%'
+		rootMargin: '0 0 -40%'
 	});
 });
